@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= form.label :problem_description %>
-    <%= form.text_area :problem_description, id: :topic_problem_description %>
+    <%= form.trix_editor :problem_description, id: :topic_problem_description %>
   </div>
 
   <div class="field">
     <%= form.label :solution %>
-    <%= form.text_area :solution, id: :topic_solution %>
+    <%= form.trix_editor :solution, id: :topic_solution %>
   </div>
 
   <div class="actions">

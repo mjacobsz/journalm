@@ -7,12 +7,12 @@
 
 <p>
   <strong>Problem description:</strong>
-  <%= @topic.problem_description %>
+  <%= @topic.problem_description.html_safe %>
 </p>
 
 <p>
   <strong>Solution:</strong>
-  <%= @topic.solution %>
+  <%= @topic.solution.html_safe %>
 </p>
 
 <%= link_to 'Edit', edit_topic_path(@topic) %> |
